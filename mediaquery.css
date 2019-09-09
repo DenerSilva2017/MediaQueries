@@ -1,0 +1,130 @@
+body, ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2 rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+p{
+    text-align: center;
+}
+
+img{
+    min-width: 100%;
+    display: block;
+}
+
+.header{
+    background-image: linear-gradient(-95deg, green, blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap; /*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+.gridlayout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 50px 0 50px;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+/**********************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2 {
+	font-family: Industry, monospace;
+	color: #8844EE;
+}
+
+h1 {
+	text-align: center;
+	margin: 60px 0;
+}
+
+p {
+	font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+section {
+	max-width: 800px;
+	margin: 0px auto 20px auto;
+}
+
+section::before, section::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.text-section, .img-section, .item-section {
+	padding: 0 10px;
+	float: left;
+}
+
+.text-section {
+	width: 60%;
+}
+
+.img-section {
+	text-align: center;
+	width: 40%;
+}
+
+.item-section {
+	width: 33.3333%;
+}
+
+section img {
+	margin-top: 20px;
+	max-width: 100%;
+}
+
+@media (max-width: 600px) {
+	
+	.item-section, .img-section, .text-section {
+		width: 100%;
+	}
+	
+	.img-section {
+		display: none;
+	}
+
+}
