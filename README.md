@@ -1,3 +1,2 @@
 # mediaqueries
-
-Projeto onde utilizei a mq.
+Projeto realizado para a prática do conhecimento em media queries.
